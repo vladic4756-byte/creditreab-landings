@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="КредитРеабилитация — маршрут к ипотеке через восстановление рейтинга">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F2155"/><stop offset="0.6" stop-color="#13265e"/><stop offset="1" stop-color="#16306f"/>
+    </linearGradient>
+    <linearGradient id="corr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.05"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="80" y="120" font-family="Lexend, sans-serif" font-size="30" font-weight="700" fill="#38BDF8" letter-spacing="1">КРЕДИТРЕАБИЛИТАЦИЯ</text>
+  <text x="80" y="210" font-family="Lexend, sans-serif" font-size="62" font-weight="700" fill="#FFFFFF">Просрочку закрыли,</text>
+  <text x="80" y="282" font-family="Lexend, sans-serif" font-size="62" font-weight="700" fill="#FFFFFF">а ипотеку не дают?</text>
+  <text x="80" y="346" font-family="IBM Plex Sans, sans-serif" font-size="30" fill="#CDD9F5">Постройте маршрут к одобрению — по месяцам.</text>
+  <!-- mini route -->
+  <rect x="80" y="430" width="1040" height="50" rx="8" fill="#D1FAE5" opacity="0.18"/>
+  <path d="M80 520 C 320 500, 520 430, 760 400 S 1040 360, 1120 350" fill="none" stroke="#38BDF8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M80 520 C 320 500, 520 430, 760 400 S 1040 360, 1120 350 L 1120 560 L 80 560 Z" fill="url(#corr)"/>
+  <g fill="#34D399"><circle cx="80" cy="520" r="9"/><circle cx="430" cy="470" r="9"/><circle cx="760" cy="400" r="9"/><circle cx="1120" cy="350" r="11"/></g>
+  <text x="80" y="600" font-family="IBM Plex Sans, sans-serif" font-size="24" fill="#9FB2DD">+150–400 баллов за 6–9 мес · не вырастет — вернём 100%</text>
+</svg>
