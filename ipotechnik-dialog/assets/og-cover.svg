@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="КредитРеабилитация — спокойный разговор без свидетелей">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBFCFE"/>
+      <stop offset="1" stop-color="#EEF1F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- brand -->
+  <g transform="translate(80,72)">
+    <rect width="38" height="38" rx="10" fill="#1B2A4A"/>
+    <path d="M9 28c5-1 7-12 13-12s7 11 13 7" stroke="#C99A5B" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <text x="52" y="27" font-family="Manrope, Arial, sans-serif" font-size="22" font-weight="700" fill="#1B2A4A">КредитРеабилитация</text>
+  </g>
+  <!-- curator bubble -->
+  <g transform="translate(80,200)">
+    <circle cx="30" cy="30" r="30" fill="#E2E8F3"/>
+    <path d="M16 38c0-9 7-14 14-14s14 5 14 14z" fill="#475569"/>
+    <ellipse cx="30" cy="28" rx="10" ry="11" fill="#EBC9AE"/>
+    <path d="M19 26c-1-9 5-15 11-15s12 6 11 14c-1-4-3-7-6-8-1 2-3 3-6 3-4 0-7-2-8-4-1 2-2 6-2 10z" fill="#332720"/>
+    <rect x="80" y="4" width="640" height="86" rx="22" fill="#1B2A4A"/>
+    <text x="106" y="42" font-family="Inter, Arial, sans-serif" font-size="24" fill="#EAEFF8">Я Анна, куратор. Расскажите, что у вас</text>
+    <text x="106" y="74" font-family="Inter, Arial, sans-serif" font-size="24" fill="#EAEFF8">с историей — без свидетелей и без звонка.</text>
+  </g>
+  <!-- user reply bubble -->
+  <g transform="translate(400,330)">
+    <rect x="0" y="0" width="720" height="74" rx="22" fill="#FBF4E9" stroke="#E4C896"/>
+    <text x="700" y="46" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="24" fill="#5A4A2A">Я всё закрыл, а ипотеку всё равно не дают</text>
+  </g>
+  <!-- offer line -->
+  <text x="80" y="500" font-family="Manrope, Arial, sans-serif" font-size="40" font-weight="700" fill="#15233F">+150–400 баллов за 6–9 месяцев — законно</text>
+  <text x="80" y="552" font-family="Inter, Arial, sans-serif" font-size="26" fill="#475569">Не вырастет — вернём 100%. Деньги не идут вам на руки. Историю не удаляем.</text>
+</svg>
