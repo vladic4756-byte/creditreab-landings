@@ -111,39 +111,39 @@ header{grid-column:1/-1;display:flex;align-items:center;gap:1rem;padding:0 1rem;
 
 <script>
 var DATA=[
- {id:"ipotechnik", seg:"Ипотечник в ловушке", name:"Классический", base:true,
+ {id:"ipotechnik", brand:"РЕЙТУМ", tagline:"Ваш кредитный рейтинг — под контролем", domain:"reitum.ru", seg:"Ипотечник в ловушке", name:"Классический", base:true,
   concept:"clean / банковский", arch:"scroll-snap statements + score-gauge + 3-шаговый квиз",
   mech:"score-gauge 480→720 (hero) и пошаговый квиз-форма",
   lh:[86,100,100,100], axe:0, contract:0, distinct:null,
   legal:"чисто · оффер +150–400/6–9мес/возврат 100% · «деньги не на руки»"},
 
- {id:"ipotechnik-plan", seg:"Ипотечник в ловушке", name:"«Карта выхода» — инструмент", win:true,
+ {id:"ipotechnik-plan", brand:"ТРАЕКТО", tagline:"Персональный маршрут к нужному рейтингу", domain:"traekto.ru", seg:"Ипотечник в ловушке", name:"«Карта выхода» — инструмент", win:true,
   concept:"tool-canvas (победитель дивергенции)", arch:"страница-инструмент, не свиток",
   mech:"построитель персонального маршрута 6–9 мес: вехи записей в БКИ + коридор-вилка прогноза, PDF-план до заявки",
   lh:[75,100,100,100], axe:0, contract:0, distinct:5,
   legal:"чисто · прогноз помечен «не гарантия» · вилка мин–макс · оффер вшит в механику"},
 
- {id:"ipotechnik-story", seg:"Ипотечник в ловушке", name:"«Семь месяцев» — лонгрид", isnew:true,
+ {id:"ipotechnik-story", brand:"Семь месяцев", tagline:"История одного восстановления — шаг за шагом", domain:"7mesyacev.ru", seg:"Ипотечник в ловушке", name:"«Семь месяцев» — лонгрид", isnew:true,
   concept:"editorial scrollytelling", arch:"нарратив одного героя, 9 глав",
   mech:"история отказ→план→одобрение; sticky-документы до/после; юр-ограничения как повороты сюжета",
   lh:[71,100,100,100], axe:0, contract:0, distinct:5, legal:"чисто · история помечена «собирательная/образец» · оффер вшит в сюжет"},
 
- {id:"ipotechnik-paths", seg:"Ипотечник в ловушке", name:"«4 дороги» — сравнение", isnew:true,
+ {id:"ipotechnik-paths", brand:"ЯСНО", tagline:"Сравните пути честно — решайте сами", domain:"yasno-reiting.ru", seg:"Ипотечник в ловушке", name:"«4 дороги» — сравнение", isnew:true,
   concept:"decision engine", arch:"интерактивный сравнитель 4 путей",
   mech:"4 пути × 5 симметричных осей; калибровка → вердикт (может указать НЕ на нас)",
   lh:[88,100,100,100], axe:0, contract:0, distinct:4, legal:"чисто · сравнит. реклама без имён конкурентов · числа «оценка» · в 2/12 вердикт уводит к «сам»"},
 
- {id:"ipotechnik-dialog", seg:"Ипотечник в ловушке", name:"«Без свидетелей» — диалог", isnew:true,
+ {id:"ipotechnik-dialog", brand:"НАЕДИНЕ", tagline:"Разговор о рейтинге — наедине, без осуждения", domain:"naedine-pkr.ru", seg:"Ипотечник в ловушке", name:"«Без свидетелей» — диалог", isnew:true,
   concept:"анти-лендинг", arch:"ветвящийся диалог с куратором",
   mech:"реплики-боль от первого лица; оффер репликами; контакт необязателен",
   lh:[89,96,100,100], axe:0, contract:0, distinct:5, legal:"чисто · юр-обязательное на всех 4 ветках (общий узел) · контакт необязателен"},
 
- {id:"bankrot", seg:"После банкротства", name:"Editorial photo-led", concept:"B · editorial",
+ {id:"bankrot", brand:"ЗАНОВО", tagline:"Финансовая жизнь — заново, законно", domain:"zanovo-reiting.ru", seg:"После банкротства", name:"Editorial photo-led", concept:"B · editorial",
   arch:"scrollytelling + горизонт-лента + masonry, фото", mech:"человечная подача, ФЗ-332 safe, score-gauge как деталь",
   lh:[84,100,96,100], axe:0, contract:0, distinct:null,
   legal:"чисто · ФЗ-332 разрешён (услуга ≠ банкротство) · оффер+гарантия"},
 
- {id:"molodoy", seg:"Молодой с историей", name:"Data-driven dashboard", concept:"C · dashboard",
+ {id:"molodoy", brand:"РОСТОК", tagline:"Рейтинг с нуля — без клейма", domain:"rostok-reiting.ru", seg:"Молодой с историей", name:"Data-driven dashboard", concept:"C · dashboard",
   arch:"bento + табы + pinned-scrub", mech:"интерактивный калькулятор рейтинга, моноцифры",
   lh:[100,100,100,100], axe:0, contract:0, distinct:null,
   legal:"чисто · числа калькулятора зажаты в оффер · «деньги не на руки»"}
@@ -164,7 +164,7 @@ function buildRail(){
       var b=document.createElement("button");b.className="item"+(cmp?" cmp":"");b.dataset.id=d.id;b.type="button";
       var tag=d.win?'<span class="chip new">★ концепт</span>':d.base?'<span class="chip base">база</span>':d.isnew?'<span class="chip new">концепт</span>':'';
       var dots=d.lh?'<div class="lhmini">'+d.lh.map(lhDot).join("")+'</div>':'<div class="lhmini"><span class="dot y">…</span></div>';
-      b.innerHTML='<span class="t">'+d.name+' '+tag+'</span><span class="s">'+d.concept+'</span>'+dots;
+      b.innerHTML='<span class="t">'+(d.brand||d.name)+' '+tag+'</span><span class="s">'+d.name+' · '+d.concept+'</span>'+dots;
       b.addEventListener("click",function(){ cmp?toggleCmp(d):select(d); });
       rail.appendChild(b);
     });
@@ -209,8 +209,10 @@ function renderPanel(d){
                  : '<div class="kv"><div class="v" style="color:var(--mut)">Строится — Lighthouse появится после прохождения QA-гейта…</div></div>';
   var gates = (d.contract!=null) ? '<div class="gates"><span class="gate">контракт 0</span><span class="gate">html-validate 0</span><span class="gate">integrity 0</span><span class="gate">axe '+d.axe+'</span></div>' : '';
   panel.innerHTML =
-    '<h2>'+d.name+'</h2>'+
-    '<div class="sub">'+d.seg+' · '+d.concept+(d.win?' · 🏆 победитель дивергенции':'')+(d.base?' · точка отсчёта':'')+'</div>'+
+    '<h2>'+(d.brand||d.name)+'</h2>'+
+    '<div class="sub">'+(d.tagline?'«'+d.tagline+'»':'')+'</div>'+
+    '<div class="kv"><div class="k">Концепт лендинга</div><div class="v">'+d.name+' · '+d.seg+(d.win?' · 🏆 победитель':'')+(d.base?' · точка отсчёта':'')+'</div></div>'+
+    (d.domain?'<div class="kv"><div class="k">Домен (проверить)</div><div class="v mono">'+d.domain+'</div></div>':'')+
     (d.distinct!=null?'<div class="kv"><div class="k">Distinctness (новизна)</div><div class="v"><span class="stars">'+stars(d.distinct)+'</span> '+d.distinct+'/5</div></div>':'')+
     '<div class="kv"><div class="k">Архетип</div><div class="v">'+d.arch+'</div></div>'+
     '<div class="kv"><div class="k">Центральный механизм</div><div class="v">'+d.mech+'</div></div>'+
