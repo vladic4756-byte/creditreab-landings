@@ -83,7 +83,7 @@ header{grid-column:1/-1;display:flex;align-items:center;gap:1rem;padding:0 1rem;
 <body>
 <div class="app">
   <header>
-    <div class="brand"><span class="m">К</span><span>КредитРеабилитация<small>анализатор лендингов · 7 версий</small></span></div>
+    <div class="brand"><span class="m">К</span><span>КредитРеабилитация<small>анализатор лендингов · 9 версий</small></span></div>
     <div class="htools">
       <div class="seg" role="group" aria-label="Ширина устройства">
         <button data-dev="360" aria-pressed="false">📱 360</button>
@@ -137,6 +137,20 @@ var DATA=[
   concept:"анти-лендинг", arch:"ветвящийся диалог с куратором",
   mech:"реплики-боль от первого лица; оффер репликами; контакт необязателен",
   lh:[89,96,100,100], axe:0, contract:0, distinct:5, legal:"чисто · юр-обязательное на всех 4 ветках (общий узел) · контакт необязателен"},
+
+ {id:"bankrot-dostup", brand:"ДОСТУП", tagline:"Понятно, что вам уже доступно — шаг за шагом", domain:"dostup-reiting.ru",
+  seg:"После банкротства", name:"«Что вам уже можно» — движок доступности", isnew:true,
+  concept:"eligibility engine (победитель дивергенции, Σ20)", arch:"decision-engine, реактивная карта доступности продуктов",
+  mech:"2 контрола → лента продуктов-замков (доступно сейчас / ≈через N мес / что ускоряет); картина доступности до заявки",
+  lh:[86,100,100,100], axe:0, contract:0, distinct:4,
+  legal:"чисто · всё «оценка, не гарантия» · ФЗ-332-safe · честная линия «статус 5 лет остаётся»"},
+
+ {id:"molodoy-yav", brand:"ЯВЬ", tagline:"Кредитная история — как есть на самом деле", domain:"yav-reiting.ru",
+  seg:"Молодой с историей", name:"«Миф или правда» — разрушитель мифов", win:true,
+  concept:"card-deck (победитель дивергенции, Σ24 · Distinct 5)", arch:"движок мифов на <details>/CSS, не квиз",
+  mech:"голос Миф/Правда по 6 убеждениям → вскрытие + источник НБКИ/218-ФЗ; без персонального балла",
+  lh:[97,100,100,100], axe:0, contract:0, distinct:5,
+  legal:"чисто · источники реальные · юр-константы как карточки-Правды"},
 
  {id:"bankrot", brand:"ЗАНОВО", tagline:"Финансовая жизнь — заново, законно", domain:"zanovo-reiting.ru", seg:"После банкротства", name:"Editorial photo-led", concept:"B · editorial",
   arch:"scrollytelling + горизонт-лента + masonry, фото", mech:"человечная подача, ФЗ-332 safe, score-gauge как деталь",
